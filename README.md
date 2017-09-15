@@ -19,7 +19,7 @@ This is an npm module that can track and report details of a demo/tutorial that 
 4. Add a repository.config file in the same directory of your main entry point files.
 
 
-# Example **repository.config** file
+# Example **repository.yaml** file
 The repository.config need to be written in Yaml format. Also, please put all your keys in lower case.
 
 ```
@@ -30,6 +30,7 @@ runtimes:
 services: 
   - Discovery
 event_id: web
+event_organizer: dev-journeys
 ```
 
 Required field:
@@ -38,6 +39,7 @@ Required field:
 3. runtimes: Put down all your platform runtime environments in a list.
 4. services: Put down all the bluemix services that are used in your journey in a list.
 5. event_id: Put down where you will distribute your journey. Default is **web**. 
+6. event_organizer: Put down your event organizer if you have one.
 
 # List of runtimes and services
 
