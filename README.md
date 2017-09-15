@@ -16,7 +16,7 @@ This is an npm module that can track and report details of a demo/tutorial that 
 
    **Note:** All apps that have deployment tracker must include the Privacy Notice.
 
-4. Add a repository.config file in the same directory of your main entry point files.
+4. Add a repository.yaml file in the same directory of your main entry point files.
 
 
 # Example **repository.yaml** file
