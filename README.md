@@ -23,7 +23,6 @@ This is an npm module that can track and report details of a demo/tutorial that 
 The repository.yaml need to be written in Yaml format. Also, please put all your keys in lower case.
 
 ```
-deploy_to_bluemix: True
 id: watson-discovery-news
 runtimes: 
   - Cloud Foundry
