@@ -33,12 +33,11 @@ event_organizer: dev-journeys
 ```
 
 Required field:
-1. deploy_to_bluemix : Put **True** if your journey has a deploy to bluemix button. Else put **False**.
-2. id: Put your journey name/Github URL of your journey.
-3. runtimes: Put down all your platform runtime environments in a list.
-4. services: Put down all the bluemix services that are used in your journey in a list.
-5. event_id: Put down where you will distribute your journey. Default is **web**. 
-6. event_organizer: Put down your event organizer if you have one.
+1. id: Put your journey name/Github URL of your journey.
+2. runtimes: Put down all your platform runtime environments in a list.
+3. services: Put down all the bluemix services that are used in your journey in a list.
+4. event_id: Put down where you will distribute your journey. Default is **web**. 
+5. event_organizer: Put down your event organizer if you have one.
 
 # List of runtimes and services
 

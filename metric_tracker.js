@@ -21,7 +21,6 @@ function combineData(data,cfData){
 	if(data.runtimes) cfData.config.target_runtimes = data.runtimes; else cfData.config.target_runtimes = "";
 	if(data.services) cfData.config.target_services = data.services; else cfData.config.target_services = "";
 	if(data.event_id) cfData.config.event_id = data.event_id; else cfData.config.event_id = "";
-	if(data.deploy_to_bluemix) cfData.config.deploy_to_bluemix = data.deploy_to_bluemix; else cfData.config.deploy_to_bluemix = "";
 	if(data.event_organizer) cfData.config.event_organizer = data.event_organizer; else cfData.config.event_organizer = "";
 	return cfData;
 	}catch(ex){
