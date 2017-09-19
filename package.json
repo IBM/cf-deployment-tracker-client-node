@@ -1,6 +1,6 @@
 {
-  "name": "metrics-collector-client",
-  "version": "0.1.7",
+  "name": "metrics-tracker-client",
+  "version": "0.1.9",
   "private": false,
   "main": "tracker.js",
   "repository": {

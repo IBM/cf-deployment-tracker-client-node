@@ -6,11 +6,11 @@ This is an npm module that can track and report details of a demo/tutorial that 
 
 1. Open a terminal and run  
    ```
-   npm install metrics-collector-client --save
+   npm install metrics-tracker-client --save
    ```
 2. Require the package in your main entry point to your app (probably app.js).  
     ```
-    require("metrics-collector-client").track();
+    require("metrics-tracker-client").track();
     ```
 3. Add a copy of the Privacy Notice to the readme file. 
 

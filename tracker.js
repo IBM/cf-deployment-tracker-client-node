@@ -83,7 +83,7 @@ function track() {
         // restler.postJson('https://deployment-tracker.mybluemix.net/api/v1/track', event).on('complete', function (data) {
         // });
     }
-    var url = 'https://metrics-collectors.mybluemix.net/api/v1/track';
+    var url = 'https://metrics-tracker.mybluemix.net/api/v1/track';
     if(journey_metric!=null){
         event = metric.massage(journey_metric,event);
     }
