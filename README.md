@@ -70,7 +70,7 @@ Services
 
 # Example app
 
-To see how to include this into your app please visit [Bluemix Hello World](https://github.com/IBM-Bluemix/bluemix-hello-node).  You will want to pay attention to [package.json](https://github.com/IBM-Bluemix/bluemix-hello-node/blob/master/package.json#L9), and [server.js](https://github.com/IBM-Bluemix/bluemix-hello-node/blob/master/server.js#L15).
+To see how to include this into your app please visit [Watson Multimedia Analyzer](https://github.com/IBM/watson-multimedia-analyzer).  You will want to pay attention to [package.json](https://github.com/IBM/watson-multimedia-analyzer/blob/master/package.json#L27), and [app.js](https://github.com/IBM/watson-multimedia-analyzer/blob/master/app.js#L39).
 
 # Privacy Notice
 
@@ -84,6 +84,7 @@ Sample web applications that include this package may be configured to track dep
 * Space ID (`space_id`) or OS username
 * Application Version (`application_version`)
 * Application URIs (`application_uris`)
+* Cloud Foundry API (`cf_api`)
 * Labels of bound services
 * Number of instances for each bound service and associated plan information
 * Metadata in the repository.yaml file
