@@ -2,7 +2,7 @@
 # event_id: web
 # event_organizer: dev-journeys
 
-# Journey runtimes
+# Journey runtimes:
 #       - Kubernetes Cluster
 #       - OpenWhisk
 #       - Cloud Foundry

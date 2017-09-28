@@ -81,7 +81,7 @@ Sample web applications that include this package may be configured to track dep
 * Application Name (`application_name`)
 * Application GUID (`application_id`)
 * Application instance index number (`instance_index`)
-* Space ID (`space_id`)
+* Space ID (`space_id`) or OS username
 * Application Version (`application_version`)
 * Application URIs (`application_uris`)
 * Labels of bound services

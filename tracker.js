@@ -5,6 +5,7 @@
 var restler = require('restler'),
     path = require('path'),
     cwd = require('cwd'),
+    os = require("os"),
     metric = require('./metric_tracker');
 
 function track() {
@@ -26,9 +27,14 @@ function track() {
 
     var event = {
         date_sent: new Date().toJSON()
-    };
+    }
 
     event.runtime = 'nodejs';
+    try{
+        event.space_id = os.userInfo().username
+    }catch(ex){
+        // Username can't be read.
+    }
 
     if ((vcapApplication) && (pkg)) {
         if (pkg.version) {
@@ -54,6 +60,9 @@ function track() {
         }
         if (vcapApplication.application_uris) {
             event.application_uris = vcapApplication.application_uris;
+        }
+        if (vcapApplication.cf_api) {
+            event.provider = vcapApplication.cf_api;
         }
         if (process.env.VCAP_SERVICES) {
             // refer to http://docs.cloudfoundry.org/devguide/deploy-apps/environment-variable.html#VCAP-SERVICES
