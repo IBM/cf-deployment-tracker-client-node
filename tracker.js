@@ -27,7 +27,7 @@ function track() {
 
     var event = {
         date_sent: new Date().toJSON()
-    }
+    };
 
     event.runtime = 'nodejs';
     try{
