@@ -2,7 +2,7 @@
 # event_id: web
 # event_organizer: dev-journeys
 
-# Journey runtimes
+# runtimes:
 #       - Kubernetes Cluster
 #       - OpenWhisk
 #       - Cloud Foundry
@@ -11,7 +11,7 @@
 #       - Hyperledger Composer
 #       - Hyperledger Fabric v1.0
 
-# Journey services:
+# services:
 #       - IoT Platform
 #       - Investment Portfolio
 #       - NodeRed (Serverless)

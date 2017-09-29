@@ -35,7 +35,7 @@ function getjson(){
         pkg = yaml.safeLoad(fs.readFileSync('repository.yaml', 'utf8'));
     }
     catch(ex) {
-        console.log("repository.config could not be loaded from the fs");
+        console.log("repository.yaml could not be loaded from the fs");
     }
 	return pkg;
 }
