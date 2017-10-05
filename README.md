@@ -1,6 +1,6 @@
 # Overview
 
-Metrics Collector Service collects statistics for dpelyoment of a github sample code on Cloud Foundry, Kubernetes, Data Science Exeprience, OpenWhisk etc.
+Metrics Collector Service collects statistics for dpelyoment of a github sample code on Cloud Foundry, Kubernetes, Data Science Experience, OpenWhisk etc.
 
 This is Node client for Metrics Collector Service. It is an npm module that can track and report details of a demo/tutorial that has been deployed to Cloud Foundry.
 
