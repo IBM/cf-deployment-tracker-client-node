@@ -29,7 +29,12 @@ function track() {
         date_sent: new Date().toJSON()
     };
 
-    event.runtime = 'nodejs';
+    if(journey_metric!=null && journey_metric.language){
+        event.runtime = journey_metric.language;
+    }else{
+        event.runtime = 'nodejs';
+    }
+
     try{
         event.space_id = os.userInfo().username
     }catch(ex){

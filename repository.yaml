@@ -9,7 +9,7 @@
 #       - Mainframe
 #       - Swift on the Server
 #       - Hyperledger Composer
-#       - Hyperledger Fabric v1.0
+#       - Data Science Experience
 
 # services:
 #       - IoT Platform
@@ -40,3 +40,5 @@
 #       - Investment Portfolio
 #       - Predictive Market Scenarios
 #       - Simulated Instrument Analytics
+
+# language: nodejs
