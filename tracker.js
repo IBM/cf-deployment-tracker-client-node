@@ -69,7 +69,7 @@ function track() {
         if (vcapApplication.cf_api) {
             event.provider = vcapApplication.cf_api;
         }
-        event.bound_vcap_services = [];
+        event.bound_services = [];
         if (process.env.VCAP_SERVICES) {
             // refer to http://docs.cloudfoundry.org/devguide/deploy-apps/environment-variable.html#VCAP-SERVICES
             vcapServices =  JSON.parse(process.env.VCAP_SERVICES);
@@ -86,7 +86,7 @@ function track() {
                             event.bound_vcap_services[service_label].plans.push(serviceInstance.plan);
                         }
                         if(serviceInstance.hasOwnProperty('name')) {
-                            event.bound_vcap_services.push(serviceInstance.name);
+                            event.bound_services.push(serviceInstance.name);
                         }
                     });
 
