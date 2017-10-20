@@ -32,6 +32,7 @@ services:
   - Discovery
 event_id: web
 event_organizer: dev-journeys
+language: nodejs
 ```
 
 Required field:
@@ -40,8 +41,9 @@ Required field:
 3. services: Put down all the bluemix services that are used in your journey in a list.
 4. event_id: Put down where you will distribute your journey. Default is **web**. 
 5. event_organizer: Put down your event organizer if you have one.
+6. language: If your journey is not in **nodejs**, please put down the journey's main language in lower case.
 
-# List of runtimes and services
+# List of runtimes, services, and languages
 
 Runtimes
 
@@ -49,6 +51,7 @@ Runtimes
 - Cloud Foundry
 - OpenWhisk
 - Mainframe
+- Data Science Experience
 
 Services
 
@@ -69,6 +72,22 @@ Services
 - Internet of Things Platform
 - Compose for MySQL
 - Compose for PostgreSQL
+
+Languages
+
+- nodejs
+- python
+- swift
+- java
+- go
+- javascript
+- php
+- c/c++
+- c#
+- objective-c
+- r
+- scala
+- shell
 
 # Example app
 

@@ -29,7 +29,12 @@ function track() {
         date_sent: new Date().toJSON()
     };
 
-    event.runtime = 'nodejs';
+    if(journey_metric!=null && journey_metric.language){
+        event.runtime = journey_metric.language;
+    }else{
+        event.runtime = 'nodejs';
+    }
+
     try{
         event.space_id = os.userInfo().username
     }catch(ex){
@@ -64,6 +69,7 @@ function track() {
         if (vcapApplication.cf_api) {
             event.provider = vcapApplication.cf_api;
         }
+        event.bound_services = [];
         if (process.env.VCAP_SERVICES) {
             // refer to http://docs.cloudfoundry.org/devguide/deploy-apps/environment-variable.html#VCAP-SERVICES
             vcapServices =  JSON.parse(process.env.VCAP_SERVICES);
@@ -78,6 +84,9 @@ function track() {
                     vcapServices[service_label].forEach(function (serviceInstance) {
                         if(serviceInstance.hasOwnProperty('plan')) {
                             event.bound_vcap_services[service_label].plans.push(serviceInstance.plan);
+                        }
+                        if(serviceInstance.hasOwnProperty('name')) {
+                            event.bound_services.push(serviceInstance.name);
                         }
                     });
 
