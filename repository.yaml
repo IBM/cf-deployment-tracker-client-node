@@ -1,4 +1,4 @@
-# id: watson-discovery-analyze-data-breaches
+# id: https://github.com/IBM/watson-discovery-analyze-data-breaches
 # event_id: web
 # event_organizer: dev-journeys
 
@@ -35,6 +35,7 @@
 #       - Internet of Things Platform
 #       - Investment Portfolio
 #       - Language Translator
+#       - Message Hub
 #       - Natural Language Classifier
 #       - Natural Language Understanding
 #       - NodeRed
