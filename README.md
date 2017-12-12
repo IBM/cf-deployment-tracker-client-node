@@ -25,7 +25,7 @@ This is Node client for Metrics Collector Service. It is an npm module that can 
 The repository.yaml need to be written in Yaml format. Also, please put all your keys in lower case.
 
 ```
-id: watson-discovery-news
+id: https://github.com/IBM/watson-discovery-news
 runtimes: 
   - Cloud Foundry
 services: 
@@ -36,82 +36,17 @@ language: nodejs
 ```
 
 Required field:
-1. id: Put your journey name/Github URL of your journey.
-   - Note: Please put down the Github URL if your journey/pattern is not from IBM organization.
+1. id: Put your Github URL of your pattern/project.
+   - Note: Please put down the Github URL if your pattern is not from **IBM** organization in Github.
 2. runtimes: Put down all your platform runtime environments in a list.
 3. services: Put down all the IBM Cloud services that are used in your journey in a list.
-4. event_id: Put down where you will distribute your journey. Default is **web**. 
-5. event_organizer: Put down your event organizer if you have one.
-6. language: If your journey is not in **nodejs**, please put down the journey's main language in lower case.
+4. event_id: Put down where you will distribute your application. Default is **web**. 
+5. event_organizer: Put down your event organizer if you have one. Default is **dev-journeys**
+6. language: If your journey is not in **nodejs**, please put down the application's main language in lower case.
 
 # List of runtimes, services, and languages
 
-Runtimes
-
-- Cloud Foundry
-- Data Science Experience
-- Hyperledger Composer
-- Kubernetes Cluster
-- Mainframe
-- OpenWhisk
-- Swift on the Server
-
-Services
-
-- Analytics Engine
-- Apache Spark
-- API Connect
-- App ID
-- Blockchain
-- Cloudant NoSQL DB
-- Compose for ElasticSearch
-- Compose for etcd
-- Compose for JanusGraph
-- Compose for MongoDB
-- Compose for MySQL
-- Compose for PostgreSQL
-- Compose for RabbitMQ
-- Compose for Redis
-- Conversation
-- Db2 Warehouse on Cloud
-- Discovery
-- IBM App Connect
-- IBM DB2 on Cloud
-- IBM Push Notifications
-- Internet of Things Platform
-- Investment Portfolio
-- Language Translator
-- Natural Language Classifier
-- Natural Language Understanding
-- NodeRed
-- Object Storage (v3)
-- Personality Insights
-- Predictive Market Scenarios
-- Secure Gateway
-- Simulated Instrument Analytics
-- Speech To Text
-- Streaming Analytics
-- Text to Speech
-- Tone Analyzer
-- Visual Recognition
-- Weather Company Data for IBM Bluemix
-- WebSphere Application Server
-
-Languages
-
-- nodejs
-- python
-- swift
-- java
-- go
-- javascript
-- php
-- c/c++
-- c#
-- objective-c
-- r
-- scala
-- shell
+Please go to the [service list page](https://github.com/IBM/metrics-collector-service/blob/master/docs/service_list.md) to get the list of official names for runtimes, services, and languages.
 
 # Example app
 
