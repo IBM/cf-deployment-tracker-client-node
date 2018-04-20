@@ -3,6 +3,7 @@
   "version": "0.2.3",
   "private": false,
   "main": "tracker.js",
+  "bin": "./cli.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/IBM/metrics-collector-client-node.git"
