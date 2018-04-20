@@ -8,6 +8,7 @@
     "url": "https://github.com/IBM/metrics-collector-client-node.git"
   },
   "dependencies": {
+    "commander": "^2.15.1",
     "cwd": "^0.10.0",
     "js-yaml": "^3.10.0",
     "restler": "^3.4.0"
